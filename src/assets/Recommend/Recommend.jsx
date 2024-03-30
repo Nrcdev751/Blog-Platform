@@ -60,11 +60,14 @@ function Recommend(){
                     <ion-icon name="flash"></ion-icon>
                     <p className="text-2xl py-3 text-white px-1">บทความล่าสุด</p>
                 </div>
-                <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
+                <Link to="/blog" className="text-white"> 
+                    <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
+                </Link>
+               
             </div>
             <div className="flex flex-wrap md:-mx-2">
                 <div className="w-full md:w-2/3 md:px-2">
-                    <Link to="blog/first-blog" className="text-white hover:opacity-80 duration-300">
+                    <Link to="blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
                                 <img className="object-cover w-full h-48 md:h-full rounded-xl" src={sololeveling} alt="" />

@@ -73,6 +73,12 @@ function Blog(){
             <Navbar/>
             <section>
                 <div className="p-4 max-w-screen-xl  mx-auto  ">
+                     <div className="text-sm breadcrumbs">
+                        <ul>
+                            <li><Link to="/">หน้าแรก</Link></li> 
+                            <li><Link to="/blog">บทความ</Link></li>
+                        </ul>
+                    </div>
                     <div className="flex justify-between items-center">
                                <div className="flex items-center">
                                     <ion-icon name="book"></ion-icon>
