@@ -1,4 +1,5 @@
 import sololeveling from '../img/Solo-Leveling-ARISE.png'
+import profile from '../img/profile.jpg'
 import honkai from '../img/honkai.jpeg'
 import valorant from '../img/valorant.png'
 import {Link } from 'react-router-dom'
@@ -42,7 +43,7 @@ function Blog(){
                                         </div>
                                     </div>
                                     <div className="flex items-center mt-3  md:hidden xl:flex ">
-                                        <img className="rounded-full  h-10 w-10 my-3" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                        <img className="rounded-full  h-10 w-10 my-3" src={profile} alt="" />
                                         <div className="infomation ms-2">
                                             <p className="font-bold">Narongchai</p>
                                             <p>ผู้เขียน</p>
@@ -73,7 +74,7 @@ function Blog(){
                                         </div>
                                     </div>
                                     <div className="flex items-center mt-3  md:hidden xl:flex ">
-                                        <img className="rounded-full  h-10 w-10 my-3" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                        <img className="rounded-full  h-10 w-10 my-3" src={profile} alt="" />
                                         <div className="infomation ms-2">
                                             <p className="font-bold">Narongchai</p>
                                             <p>ผู้เขียน</p>
@@ -104,7 +105,7 @@ function Blog(){
                                         </div>
                                     </div>
                                     <div className="flex items-center mt-3  md:hidden xl:flex ">
-                                        <img className="rounded-full  h-10 w-10 my-3" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                        <img className="rounded-full  h-10 w-10 my-3" src={profile} alt="" />
                                         <div className="infomation ms-2">
                                             <p className="font-bold">Narongchai</p>
                                             <p>ผู้เขียน</p>
