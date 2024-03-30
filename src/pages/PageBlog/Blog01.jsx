@@ -3,9 +3,11 @@ function Blog(){
     return(
         <>
             <Navbar/>
-            <div>
+            <section>
+            <div className="p-4 max-w-screen-xl  mx-auto  ">
                 <p className="text-3xl">First Blog</p>
             </div>
+            </section>
         </>
     )
 }

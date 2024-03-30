@@ -3,7 +3,7 @@ import './index.css'
 import ReactDOM from 'react-dom/client'
 import PageHome from './pages/PageHome/PageHome.jsx';
 import PageBlog from './pages/PageBlog/PageBlog.jsx';
-import FirstBlog from './pages/PageBlog/FirstBlog.jsx';
+import FirstBlog from './pages/PageBlog/Blog01.jsx';
 import PageError from './pages/PageError/PageError.jsx';
 import {
   createBrowserRouter,
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "blog/first-blog",
+    path: "blog/blog01",
     element: (
       <FirstBlog/>
     ),

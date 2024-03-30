@@ -13,7 +13,7 @@ function Recommend(){
         
         <>
     <section className="main-bg bg-[url('./assets/img/main-bg.png')] bg-contain   p-3">
-    <nav className=" p-4 max-w-screen-xl  mx-auto  ">
+        <nav className=" p-4 max-w-screen-xl  mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="md:hidden">
                     <button onClick={toggleMenu} id="menu-toggle" className="text-white">
@@ -33,20 +33,20 @@ function Recommend(){
                     </ul>
                 </div>
                 <div className="hidden md:flex ">
-                    <button className="btn btn-sm mx-2">เข้าสู่ระบบ</button>
-                    <button className="btn btn-sm btn-primary  bg-gradient-to-r from-blue-500 to-blue-800 text-white">สมัครสมาชิก</button>
+                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 mx-2">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">สมัครสมาชิก</button>
                 </div>
             </div>
             {isMenuOpen ? (
                 <ul className="flex-col md:hidden transition-all">
-                    <li className="py-2"><Link to="/" className="text-white">Home</Link></li>
-                    <li  className="py-2"><Link to="blog" className="text-white">Blog</Link></li>
+                    <li className="py-2"><Link to="/" className="text-white">หน้าแรก</Link></li>
+                    <li  className="py-2"><Link to="blog" className="text-white">บทความ</Link></li>
                     <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
                     <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
                     <div className="mt-2">
-                    <button className="btn btn-sm">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
                     <br />
-                    <button className="btn btn-sm btn-primary  bg-gradient-to-r from-blue-500 to-blue-800 text-white mt-2">สมัครสมาชิก</button>
+                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white mt-2">สมัครสมาชิก</button>
                     </div>
             </ul>
             ) : null
@@ -60,7 +60,7 @@ function Recommend(){
                     <ion-icon name="flash"></ion-icon>
                     <p className="text-2xl py-3 text-white px-1">บทความล่าสุด</p>
                 </div>
-                <div className="btn btn-sm btn-primary  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
+                <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
             </div>
             <div className="flex flex-wrap md:-mx-2">
                 <div className="w-full md:w-2/3 md:px-2">
@@ -76,11 +76,16 @@ function Recommend(){
                                         </div>
                                     </div>
                                     <p className="text-white md:text-3xl">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
-                                    <div className="status flex items-center">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                        <p className='mx-2'>100</p>
-                                        <ion-icon name="heart-outline"></ion-icon>
-                                        <p className='mx-2'>10</p>
+                                    <div className="status flex justify-between">
+                                        <div className="icon status flex items-center">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                            <p className='mx-2'>100</p>
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                            <p className='mx-2'>10</p>
+                                        </div>
+                                        <div className="date status">
+                                            <p>21 มีนาคม 67 19.21 น.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -104,11 +109,16 @@ function Recommend(){
                                             </div>
                                         </div>
                                         <p className="text-white md:text-md xl:text-xl">Clove เอเจนท์ใหม่ทำให้ Smoke น่าเล่นขึ้น</p>
-                                        <div className="status flex md:hidden xl:flex flex items-center">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                            <p className='mx-2'>100</p>
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                            <p className='mx-2'>10</p>
+                                        <div className="status flex md:hidden xl:flex flex items-center justify-between">
+                                            <div className="icon status flex items-center">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                                <p className='mx-2'>50</p>
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                                <p className='mx-2'>5</p>
+                                            </div>
+                                            <div className="date status">
+                                                <p>28 มีนาคม 67 19.05 น.</p>
+                                            </div>
                                         </div>
                                 </div>
                             </div>
@@ -129,11 +139,16 @@ function Recommend(){
                                             </div>
                                         </div>
                                         <p className="text-white md:text-md xl:text-xl">แพทซ์ใหม่ครบรอบ 1 ปีมีอะไรน่าสนใจมาดูกัน</p>
-                                        <div className="status flex md:hidden xl:flex flex items-center">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                            <p className='mx-2'>100</p>
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                            <p className='mx-2'>10</p>
+                                        <div className="status flex md:hidden xl:flex flex items-center justify-between">
+                                            <div className="icon status flex items-center">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                                <p className='mx-2'>45</p>
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                                <p className='mx-2'>3</p>
+                                            </div>
+                                            <div className="date status">
+                                                <p>28 มีนาคม 67 16.49 น.</p>
+                                            </div>
                                         </div>
                                 </div>
                             </div>

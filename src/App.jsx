@@ -1,4 +1,4 @@
-import Navbar from "./Navbar/Navbar.jsx"
+import Navbar from "./assets/Navbar/Navbar.jsx"
 import PageHome from "./pages/PageHome/PageHome.jsx"
 
 
