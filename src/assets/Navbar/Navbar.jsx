@@ -1,4 +1,5 @@
 import { useState } from "react"
+import {Link } from 'react-router-dom'
 
 function Navbar(){
         const [isMenuOpen,setIsMenuOpen] = useState(false);
@@ -21,10 +22,10 @@ function Navbar(){
                 <div>
                 <div className="text-white text-2xl font-bold">GameGrid</div>
                     <ul className="hidden md:flex space-x-4">
-                        <li><a href="#" className="text-white">Home</a></li>
-                        <li><a href="#" className="text-white">About</a></li>
-                        <li><a href="#" className="text-white">Services</a></li>
-                        <li><a href="#" className="text-white">Contact</a></li>
+                        <li><Link to="/" className="text-white">Home</Link></li>
+                        <li><Link to="blog" className="text-white">About</Link></li>
+                        <li><Link to="treste" className="text-white">Home</Link></li>
+                        <li><Link to="/" className="text-white">Home</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:flex ">
@@ -34,10 +35,10 @@ function Navbar(){
             </div>
             {isMenuOpen ? (
                 <ul className="flex-col md:hidden transition-all">
-                    <li className="py-2"><a href="#" className="text-white">Home</a></li>
-                    <li  className="py-2"><a href="#" className="text-white">About</a></li>
-                    <li  className="py-2"><a href="#" className="text-white">Services</a></li>
-                    <li  className="py-2"><a href="#" className="text-white">Contact</a></li>
+                    <li className="py-2"><Link to="/" className="text-white">Home</Link></li>
+                    <li  className="py-2"><Link to="blog" className="text-white">About</Link></li>
+                    <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
+                    <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
                     <div className="mt-2">
                     <button className="btn btn-sm">เข้าสู่ระบบ</button>
                     <br />
