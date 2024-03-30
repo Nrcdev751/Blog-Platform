@@ -1,52 +1,150 @@
+import {Link } from 'react-router-dom'
+import { useState } from "react"
+import sololeveling from '../img/Solo-Leveling-ARISE.png'
+import honkai from '../img/honkai.jpeg'
+import valorant from '../img/valorant.png'
 function Recommend(){
-    return(
-        <>
-           <section className="">
-                <div className="p-4 max-w-screen-xl mx-auto">
-                    <div className="flex justify-between items-center">
-                        <p className="text-2xl py-3 font-bold">Recommend Article</p>
-                        <div className="btn btn-sm bg-gradient-to-r from-cyan-500 to-blue-500 text-white">ชมทั้งหมด</div>
-                    </div>
-                    <div className="grid  md:grid-cols-3 md:gap-2">
-                        <div className="col-span-2 ">
-                            <div className="blog relative">
-                                <div className="flex">
-                                    <img className="w-full rounded-xl" src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                                    <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "80%" }}></span>
-                                    <div className="absolute bottom-0 p-3 ">
-                                        <p className="text-white text-3xl">Lorem ipsum dolor sit amet.</p>
-                                        <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ratione?</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
+    const [isMenuOpen,setIsMenuOpen] = useState(false);
 
-                        <div className="col-span-1 ">
-                            <div className="blog relative">
-                                <div className="flex">
-                                    <img className="w-full rounded-xl" src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                                    <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "80%" }}></span>
-                                    <div className="absolute bottom-0 p-3 ">
-                                        <p className="text-white md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet.</p>
-                                        <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ratione?</p>
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+    return(
+        
+        <>
+    <section className="main-bg bg-[url('./assets/img/main-bg.png')] bg-contain   p-3">
+    <nav className=" p-4 max-w-screen-xl  mx-auto  ">
+            <div className="flex items-center justify-between">
+                <div className="md:hidden">
+                    <button onClick={toggleMenu} id="menu-toggle" className="text-white">
+                        <svg 
+                         fill='none' stroke='currentColor' stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" className="w-6 h-6">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                <div className="text-white text-2xl font-bold">GamerGrid</div>
+                    <ul className="hidden md:flex space-x-4">
+                        <li><Link to="/" className="text-white">หน้าแรก</Link></li>
+                        <li><Link to="blog" className="text-white">บทความ</Link></li>
+                        <li><Link to="treste" className="text-white">Home</Link></li>
+                        <li><Link to="/" className="text-white">Home</Link></li>
+                    </ul>
+                </div>
+                <div className="hidden md:flex ">
+                    <button className="btn btn-sm mx-2">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-primary  bg-gradient-to-r from-blue-500 to-blue-800 text-white">สมัครสมาชิก</button>
+                </div>
+            </div>
+            {isMenuOpen ? (
+                <ul className="flex-col md:hidden transition-all">
+                    <li className="py-2"><Link to="/" className="text-white">Home</Link></li>
+                    <li  className="py-2"><Link to="blog" className="text-white">Blog</Link></li>
+                    <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
+                    <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
+                    <div className="mt-2">
+                    <button className="btn btn-sm">เข้าสู่ระบบ</button>
+                    <br />
+                    <button className="btn btn-sm btn-primary  bg-gradient-to-r from-blue-500 to-blue-800 text-white mt-2">สมัครสมาชิก</button>
+                    </div>
+            </ul>
+            ) : null
+            
+            }
+            
+        </nav>
+        <div className="p-4 max-w-screen-xl mx-auto">
+            <div className="flex justify-between items-center">
+                <div className="titile flex items-center">
+                    <ion-icon name="flash"></ion-icon>
+                    <p className="text-2xl py-3 text-white px-1">บทความล่าสุด</p>
+                </div>
+                <div className="btn btn-sm btn-primary  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
+            </div>
+            <div className="flex flex-wrap md:-mx-2">
+                <div className="w-full md:w-2/3 md:px-2">
+                    <Link to="blog/first-blog" className="text-white hover:opacity-80 duration-300">
+                        <div className="blog relative">
+                            <div className="flex">
+                                <img className="object-cover w-full h-48 md:h-full rounded-xl" src={sololeveling} alt="" />
+                                <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
+                                <div className="infomation absolute bottom-0 p-3">
+                                    <div className="tag-group flex">
+                                        <div className="bg-red-400 text-white inline-flex items-center  px-4 rounded-md">
+                                            <ion-icon name="flame"></ion-icon> <p>ข่าวมาแรง</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="blog relative">
-                                <div className="flex">
-                                    <img className="w-full rounded-xl md:mt-1" src="https://images.unsplash.com/photo-1707343844152-6d33a0bb32c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                                    <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "80%" }}></span>
-                                    <div className="absolute bottom-0 p-3 ">
-                                        <p className="text-white md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet.</p>
-                                        <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ratione?</p>
+                                    <p className="text-white md:text-3xl">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
+                                    <div className="status flex items-center">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                        <p className='mx-2'>100</p>
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <p className='mx-2'>10</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
-            </section>
+
+                <div className="w-full md:w-1/3 md:px-2">
+                    <Link to="blog/first-blog" className="text-white hover:opacity-80 duration-300">
+                        <div className="blog relative">
+                            <div className="flex">
+                                <img className="object-cover w-full h-48 md:h-full rounded-xl" src={valorant} alt="" />
+                                <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
+                                <div className="infomation absolute bottom-0 p-3">
+                                        <div className="tag-group flex md:hidden xl:flex">
+                                            <div className="bg-red-400 text-white inline-flex items-center  px-4 rounded-md mx-1">
+                                                <ion-icon name="flame"></ion-icon> <p>อัพเดทใหม่</p>
+                                            </div>
+                                            <div className="bg-blue-600 text-white inline-flex items-center  px-4 rounded-md mx-1">
+                                            <ion-icon name="game-controller"></ion-icon> <p>Valorant</p>
+                                            </div>
+                                        </div>
+                                        <p className="text-white md:text-md xl:text-xl">Clove เอเจนท์ใหม่ทำให้ Smoke น่าเล่นขึ้น</p>
+                                        <div className="status flex md:hidden xl:flex flex items-center">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                            <p className='mx-2'>100</p>
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                            <p className='mx-2'>10</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                    <Link to="blog/first-blog" className="text-white hover:opacity-80 duration-300">
+                        <div className="blog relative">
+                            <div className="flex">
+                                <img className="object-cover w-full h-48 md:h-full rounded-xl md:mt-1" src={honkai} alt="" />
+                                <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
+                                <div className="infomation absolute bottom-0 p-3">
+                                        <div className="tag-group flex md:hidden xl:flex">
+                                            <div className="bg-red-400 text-white inline-flex items-center  px-4 rounded-md mx-1">
+                                                <ion-icon name="flame"></ion-icon> <p>อัพเดทใหม่</p>
+                                            </div>
+                                            <div className="bg-blue-600 text-white inline-flex items-center  px-4 rounded-md mx-1">
+                                            <ion-icon name="game-controller"></ion-icon> <p>Honkai star rail </p>
+                                            </div>
+                                        </div>
+                                        <p className="text-white md:text-md xl:text-xl">แพทซ์ใหม่ครบรอบ 1 ปีมีอะไรน่าสนใจมาดูกัน</p>
+                                        <div className="status flex md:hidden xl:flex flex items-center">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                            <p className='mx-2'>100</p>
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                            <p className='mx-2'>10</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
         </>
     )
 }
