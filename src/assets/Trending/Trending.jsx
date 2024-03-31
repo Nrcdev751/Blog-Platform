@@ -1,4 +1,3 @@
-import bluearchive from '../img/blue-archive.png'
 import dragonDogma from '../img/dragon-dogma.png'
 import teamfightTactic from '../img/teamfight-tactic.png'
 import pathofExile from '../img/pathofexile.png'
