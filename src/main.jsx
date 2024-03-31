@@ -20,6 +20,12 @@ const router = createBrowserRouter([
     errorElement: <PageError/>
   },
   {
+    path: "my-blog",
+    element: (
+      <PageHome/>
+    ),
+  },
+  {
     path: "blog",
     element: (
       <PageBlog/>
