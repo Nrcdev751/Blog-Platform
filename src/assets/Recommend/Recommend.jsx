@@ -67,7 +67,7 @@ function Recommend(){
             </div>
             <div className="flex flex-wrap md:-mx-2">
                 <div className="w-full md:w-2/3 md:px-2">
-                    <Link to="blog/blog01" className="text-white hover:opacity-80 duration-300">
+                    <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
                                 <img className="object-cover w-full h-48 md:h-full rounded-xl" src={sololeveling} alt="" />
@@ -97,7 +97,7 @@ function Recommend(){
                 </div>
 
                 <div className="w-full md:w-1/3 md:px-2">
-                    <Link to="blog/first-blog" className="text-white hover:opacity-80 duration-300">
+                    <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
                                 <img className="object-cover w-full h-48 md:h-full rounded-xl" src={valorant} alt="" />
@@ -127,7 +127,7 @@ function Recommend(){
                             </div>
                         </div>
                     </Link>
-                    <Link to="blog/first-blog" className="text-white hover:opacity-80 duration-300">
+                    <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
                                 <img className="object-cover w-full h-48 md:h-full rounded-xl md:mt-1" src={honkai} alt="" />

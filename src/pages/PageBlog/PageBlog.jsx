@@ -32,7 +32,7 @@ function Blog(){
         {
             id: 2,
             imageUrl: valorant,
-            linkTo: "first-blog",
+            linkTo: "blog01",
             content: {
                 tag: "ข่าวมาแรง",
                 game: "Valorant",
@@ -51,7 +51,7 @@ function Blog(){
         {
             id: 3,
             imageUrl: honkai,
-            linkTo: "first-blog",
+            linkTo: "blog01",
             content: {
                 tag: "ข่าวมาแรง",
                 game: "Honkai Star Rail",
