@@ -70,7 +70,7 @@ function Recommend(){
                     <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
-                                <img className="object-cover w-full h-48 md:h-full rounded-xl" src={sololeveling} alt="" />
+                                <img className="object-cover w-full h-48 md:h-full rounded-xl" loading="lazy" src={sololeveling} alt="" />
                                 <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
                                 <div className="infomation absolute bottom-0 p-3">
                                     <div className="tag-group flex">
@@ -100,7 +100,7 @@ function Recommend(){
                     <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
-                                <img className="object-cover w-full h-48 md:h-full rounded-xl" src={valorant} alt="" />
+                                <img className="object-cover w-full h-48 md:h-full rounded-xl" loading="lazy" src={valorant} alt="" />
                                 <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
                                 <div className="infomation absolute bottom-0 p-3">
                                         <div className="tag-group flex md:hidden xl:flex">
@@ -130,7 +130,7 @@ function Recommend(){
                     <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">
-                                <img className="object-cover w-full h-48 md:h-full rounded-xl md:mt-1" src={honkai} alt="" />
+                                <img className="object-cover w-full h-48 md:h-full rounded-xl md:mt-1" loading="lazy" src={honkai} alt="" />
                                 <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
                                 <div className="infomation absolute bottom-0 p-3">
                                         <div className="tag-group flex md:hidden xl:flex">
