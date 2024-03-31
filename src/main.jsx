@@ -13,7 +13,18 @@ import {
   RouterProvider,
   Route,
   Link,
+  useLocation,
 } from "react-router-dom";
+
+// import {useEffect , useLayoutEffect} from "react";
+
+//   const { pathname } = useLocation();
+
+//   useLayoutEffect(() => {
+//     window.scrollTo({top:0, behavior: "auto"});
+//   },[pathname]);
+
+
 const router = createBrowserRouter([
   {
     path: "/",

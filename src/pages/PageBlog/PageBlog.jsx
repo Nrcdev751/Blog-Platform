@@ -6,6 +6,7 @@ import {Link } from 'react-router-dom'
 import React, { useState } from 'react';
 import Navbar from "../../assets/Navbar/Navbar"
 import Footer from "../../assets/Footer/Footer"
+import GoToTop from '../../assets/Gototop/Gototop'
 function Blog(){
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -141,6 +142,8 @@ function Blog(){
                 </div>
             </section>
             <Footer/>
+            <GoToTop/>
+
         </>
     )
 }

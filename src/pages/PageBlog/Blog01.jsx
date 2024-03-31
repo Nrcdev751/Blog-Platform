@@ -5,6 +5,7 @@ import sololeveling from '../../assets/img/Solo-Leveling-ARISE.png'
 import valorant from '../../assets/img/valorant.png'
 import honkai from '../../assets/img/honkai.jpeg'
 import profile from '../../assets/img/profile.jpg'
+import GoToTop from "../../assets/Gototop/Gototop"
 import { useState } from "react"
 
 
@@ -165,6 +166,7 @@ function Blog(){
                 </div>
             </section>
             <Footer/>
+            <GoToTop/>
         </>
     )
 }

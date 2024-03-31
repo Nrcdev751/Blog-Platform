@@ -4,7 +4,9 @@ import Footer from "../../assets/Footer/Footer"
 import sololeveling from '../../assets/img/Solo-Leveling-ARISE.png'
 import valorant from '../../assets/img/valorant.png'
 import honkai from '../../assets/img/honkai.jpeg'
-import {Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import GoToTop from "../../assets/Gototop/Gototop"
+
 function Narongchai(){
     return(
         <>
@@ -160,6 +162,7 @@ function Narongchai(){
             </div>
             
             <Footer/>
+            <GoToTop/>
         </>
       
     )
