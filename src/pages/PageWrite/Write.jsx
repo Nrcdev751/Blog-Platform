@@ -71,13 +71,15 @@ function Write(){
                                 </div>
                                 </label>
                             </div>
-                            <div className="form-group">
+                            <div className="form-group my-5">
                                 <div className="label">
                                         <span className="label-text">เนื้อหาบทความ</span>
                                 </div>
-                                <ReactQuill theme="snow" modules={module} className="text-white" value={value} onChange={setValue} />   
+                                <ReactQuill theme="snow" modules={module} className="h-72" value={value} onChange={setValue} />   
                             </div>
-                            <button className="btn btn-md btn-ghost w-full bg-gradient-to-r from-blue-500 to-blue-800 text-white mt-2">สร้างบทความ</button>
+                            <div>
+                                <button className="my-10 btn btn-md btn-ghost w-full bg-gradient-to-r from-blue-500 to-blue-800 text-white ">สร้างบทความ</button>
+                            </div>
                         </form>
                     </div>
                     <div className="col-span-3"></div>
