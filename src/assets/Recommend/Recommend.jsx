@@ -3,6 +3,7 @@ import { useState } from "react"
 import sololeveling from '../img/Solo-Leveling-ARISE.png'
 import honkai from '../img/honkai.jpeg'
 import valorant from '../img/valorant.png'
+import logo from "../img/logo.svg"
 function Recommend(){
     const [isMenuOpen,setIsMenuOpen] = useState(false);
 
@@ -24,7 +25,10 @@ function Recommend(){
                     </button>
                 </div>
                 <div>
+                <div className="flex items-center">
                 <div className="text-white text-2xl font-bold">GamerGrid</div>
+                    <img src={logo} className="h-5 w-5 mx-2" alt="" />
+                </div>
                     <ul className="hidden md:flex space-x-4">
                         <li><Link to="/" className="text-white">หน้าแรก</Link></li>
                         <li><Link to="/blog" className="text-white">บทความ</Link></li>
