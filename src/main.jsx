@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     errorElement: <PageError/>
   },
   {
-    path: "my-blog",
+    path: "Blog-Platform",
     element: (
       <PageHome/>
     ),
