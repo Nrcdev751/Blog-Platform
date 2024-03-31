@@ -27,8 +27,8 @@ function Recommend(){
                 <div className="text-white text-2xl font-bold">GamerGrid</div>
                     <ul className="hidden md:flex space-x-4">
                         <li><Link to="/" className="text-white">หน้าแรก</Link></li>
-                        <li><Link to="blog" className="text-white">บทความ</Link></li>
-                        <li><Link to="treste" className="text-white">Home</Link></li>
+                        <li><Link to="/blog" className="text-white">บทความ</Link></li>
+                        <li><Link to="" className="text-white">Home</Link></li>
                         <li><Link to="/" className="text-white">Home</Link></li>
                     </ul>
                 </div>
