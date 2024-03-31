@@ -125,7 +125,7 @@ function Blog(){
                                     <img className="rounded-full  h-10 w-10 my-3" src={profile} alt="" />
                                     <div className="infomation ms-2">
                                         <p className="font-bold">Narongchai</p>
-                                        <p>ผู้เขียน</p>
+                                        <p>Student</p>
                                     </div>
                                 </div>
                             </Link>

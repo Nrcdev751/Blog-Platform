@@ -59,9 +59,12 @@ function Blog(){
                             </div>
                         </div>
                             <p className="text-xl lg:text-3xl my-3">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
+                            <div className="bg-red-400 text-white inline-flex items-center  my-3 px-3 rounded-md">
+                                <ion-icon name="flame"></ion-icon> <p>ข่าวมาแรง</p>
+                            </div>
                             <img src={sololeveling} className="w-full my-2" alt="" />
                             <p className="text-slate-300/80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad ducimus ab dicta, cum maiores libero excepturi consequuntur amet obcaecati provident earum, alias dolores labore ipsa optio nisi quidem voluptatibus!</p>
-                            <p className="lg:text-2xl my-2">Lorem ipsum dolor sit amet.</p>
+                            <p className="lg:text-2xl my-2">Heading</p>
                             <p className="text-slate-300/80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad iure nisi culpa ipsum atque quisquam aliquid? Pariatur eos dolor, ratione dolores assumenda maxime omnis laudantium explicabo eveniet porro. Excepturi.</p>
                             <div className="option-button flex justify-between items-center my-5">
                                 <a >
