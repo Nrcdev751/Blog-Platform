@@ -13,8 +13,9 @@ function Blog(){
                                     <ion-icon name="book"></ion-icon>
                                     <p className="text-2xl py-3 text-white px-2">บทความของเรา</p>
                                </div>
-                                <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
-                    </div>
+                               <Link to="/blog">
+                                    <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
+                                </Link>                    </div>
                     <div className="md:grid grid-cols-6">
                         <div className="col-span-4">
                             <label className="input input-bordered mb-3 flex items-center gap-2">
@@ -117,8 +118,17 @@ function Blog(){
                         </div>
                         <div className="col-span-2">
                             <div className="game-card md:ms-3 bg-blue-600/25 text-white p-3 rounded-xl">
-                                <p className="text-xl font-bold">ผู้เขียนบทความ</p>
+                                <p className="text-xl font-bold">ผู้เขียนบทความของเรา</p>
                             </div>
+                            <Link to="/author/narongchai">
+                                <div className="flex items-center mt-3 hover:bg-slate-700/25 duration-300 xl:flex p-5 mx-3 rounded-md">
+                                    <img className="rounded-full  h-10 w-10 my-3" src={profile} alt="" />
+                                    <div className="infomation ms-2">
+                                        <p className="font-bold">Narongchai</p>
+                                        <p>ผู้เขียน</p>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                    

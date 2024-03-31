@@ -97,7 +97,7 @@ function Blog(){
                                             </div>
                                 </div>
                                 
-                                <Link>
+                                <Link to="/author/narongchai">
                                     <div className="author-link me-4 flex  items-center hover:text-blue-200/50 duration-300">
                                         <p className="me-2">ผู้เขียนบทความ </p>
                                         <ion-icon name="chevron-forward-outline"></ion-icon>

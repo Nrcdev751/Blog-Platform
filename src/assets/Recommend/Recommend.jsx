@@ -28,8 +28,8 @@ function Recommend(){
                     <ul className="hidden md:flex space-x-4">
                         <li><Link to="/" className="text-white">หน้าแรก</Link></li>
                         <li><Link to="/blog" className="text-white">บทความ</Link></li>
-                        <li><Link to="" className="text-white">Home</Link></li>
-                        <li><Link to="/" className="text-white">Home</Link></li>
+                        <li><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
+                        <li><Link to="/write" className="text-white">เขียนบทความ</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:flex ">
@@ -41,8 +41,8 @@ function Recommend(){
                 <ul className="flex-col md:hidden transition-all">
                     <li className="py-2"><Link to="/" className="text-white">หน้าแรก</Link></li>
                     <li  className="py-2"><Link to="blog" className="text-white">บทความ</Link></li>
-                    <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
-                    <li  className="py-2"><Link to="/" className="text-white">Home</Link></li>
+                    <li  className="py-2"><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
+                    <li  className="py-2"><Link to="/write" className="text-white">เขียนบทความ</Link></li>
                     <div className="mt-2">
                     <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
                     <br />

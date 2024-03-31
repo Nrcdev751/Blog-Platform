@@ -5,6 +5,7 @@ import PageHome from './pages/PageHome/PageHome.jsx';
 import PageBlog from './pages/PageBlog/PageBlog.jsx';
 import FirstBlog from './pages/PageBlog/Blog01.jsx';
 import PageError from './pages/PageError/PageError.jsx';
+import Narongchai from './pages/PageAuthor/Narongchai.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -35,6 +36,12 @@ const router = createBrowserRouter([
     path: "blog/blog01",
     element: (
       <FirstBlog/>
+    ),
+  },
+  {
+    path: "/author/narongchai",
+    element: (
+      <Narongchai/>
     ),
   },
 ]);
