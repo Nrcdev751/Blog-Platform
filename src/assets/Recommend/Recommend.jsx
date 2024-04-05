@@ -26,7 +26,7 @@ function Recommend(){
                 </div>
                 <div>
                 <div className="flex items-center">
-                <div className="text-white text-2xl font-bold">GamerGrid</div>
+                    <div className="text-white text-2xl font-bold">GamerGrid</div>
                     <img src={logo} className="h-5 w-5 mx-2" alt="" />
                 </div>
                     <ul className="hidden md:flex space-x-4">
