@@ -71,33 +71,34 @@ function Recommend(){
             </div>
             <div className="flex flex-wrap md:-mx-2">
                 <div className="w-full md:w-2/3 md:px-2">
-                    <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
-                        <div className="blog relative">
-                            <div className="flex">
-                                <img className="object-cover w-full h-48 md:h-full rounded-xl" loading="lazy" src={sololeveling} alt="" />
-                                <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
-                                <div className="infomation absolute bottom-0 p-3">
-                                    <div className="tag-group flex">
-                                        <div className="bg-red-400 text-white inline-flex items-center  px-4 rounded-md">
-                                            <ion-icon name="flame"></ion-icon> <p>ข่าวมาแรง</p>
+                        <Link className="" to="/blog/blog01"> 
+                            <div className="blog relative">
+                                <div className="flex">
+                                    <img className="object-cover w-full h-48 md:h-full rounded-xl" loading="lazy" src={sololeveling} alt="" />
+                                    <span className="rounded-xl bg-gradient-to-t from-black via-transparent to-transparent absolute inset-x-0 bottom-0" style={{ height: "100%" }}></span>
+                                    <div className="infomation absolute bottom-0 p-3">
+                                        <div className="tag-group flex">
+                                            <div className="bg-red-400 text-white inline-flex items-center  px-4 rounded-md">
+                                                <ion-icon name="flame"></ion-icon> <p>ข่าวมาแรง</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <p className="text-white md:text-3xl">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
-                                    <div className="status flex justify-between">
-                                        <div className="icon status flex items-center">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                            <p className='mx-2'>100</p>
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                            <p className='mx-2'>10</p>
+                                        <p className="text-white md:text-3xl">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
+                                        <div className="status flex justify-between">
+                                            <div className="icon status flex items-center">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                                <p className='mx-2'>100</p>
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                                <p className='mx-2'>10</p>
+                                            </div>
+                                            <div className="date status">
+                                                <p>21 มีนาคม 67 19.21 น.</p>
+                                            </div>
                                         </div>
-                                        <div className="date status">
-                                            <p>21 มีนาคม 67 19.21 น.</p>
-                                        </div>
+                                        <Link to="/blog/blog01" className="text-white hidden md:flex group"><div className="btn btn-md text-xl btn-ghost my-2 bg-gradient-to-r from-blue-500 to-blue-800 text-white">อ่านเพิ่มเติม <div className="icon flex items-center group-hover:ms-2 duration-300"><ion-icon  name="arrow-forward-outline" className=""></ion-icon> </div></div></Link>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
                 </div>
 
                 <div className="w-full md:w-1/3 md:px-2">
