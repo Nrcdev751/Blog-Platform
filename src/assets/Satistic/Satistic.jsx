@@ -1,3 +1,5 @@
+import satis from '../json/satistic.json'
+
 function Satistic(){
     return(
         <>
@@ -7,20 +9,26 @@ function Satistic(){
                             <p className="main-title text-4xl">ข้อมูลของเรา</p>
                             <p className="text-xl text-slate-300/80 my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, quo?</p>
                         </div>
-                    <div className="grid md:grid-cols-3 my-10">
-                        <div className="text-center">
-                            <p className="text-7xl text-blue-600">3</p>
-                            <p className="text-xl text-slate-300/80 my-5">บทความ</p>
-                        </div>
-                        <div className="text-center">
-                            <p className="text-7xl text-blue-600">1</p>
-                            <p className="text-xl text-slate-300/80 my-5">ผู้เขียนบทความ</p>
-                        </div>
-                        <div className="text-center">
-                            <p className="text-7xl text-blue-600">40</p>
-                            <p className="text-xl text-slate-300/80 my-5">ยอดรับชม</p>
-                        </div>
-                    </div>
+                        {
+                                satis.map((satistic) => (
+                                <div className="grid md:grid-cols-3 my-10">
+                                    <div className="text-center">
+                                        <p className="text-7xl text-blue-600">{satistic.totalBlogs}</p>
+                                        <p className="text-xl text-slate-300/80 my-5">บทความ</p>
+                                    </div>
+                                    <div className="text-center">
+                                        <p className="text-7xl text-blue-600">{satistic.totalAuthor}</p>
+                                        <p className="text-xl text-slate-300/80 my-5">ผู้เขียนบทความ</p>
+                                    </div>
+                                    <div className="text-center">
+                                        <p className="text-7xl text-blue-600">{satistic.totalViews}</p>
+                                        <p className="text-xl text-slate-300/80 my-5">ยอดรับชม</p>
+                                    </div>
+                                </div>
+                                    )
+                                )
+                            }
+                   
                 </div>
            </section>
         </>

@@ -26,7 +26,7 @@ function Navbar(){
                     <img src={logo} className="h-5 w-5 mx-2" alt="" />
                 </div>
                 <ul className="hidden md:flex space-x-4">
-                        <li><Link to="/" className="text-white">หน้าแรก</Link></li>
+                        <li><Link to="/Blog-Platform/" className="text-white">หน้าแรก</Link></li>
                         <li><Link to="/blog" className="text-white">บทความ</Link></li>
                         <li><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
                         <li><Link to="/write" className="text-white">เขียนบทความ</Link></li>
@@ -39,7 +39,7 @@ function Navbar(){
             </div>
             {isMenuOpen ? (
                 <ul className="flex-col md:hidden transition-all">
-                    <li className="py-2"><Link to="/" className="text-white">หน้าแรก</Link></li>
+                    <li className="py-2"><Link to="/Blog-Platform" className="text-white">หน้าแรก</Link></li>
                     <li  className="py-2"><Link to="blog" className="text-white">บทความ</Link></li>
                     <li  className="py-2"><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
                     <li  className="py-2"><Link to="/write" className="text-white">เขียนบทความ</Link></li>

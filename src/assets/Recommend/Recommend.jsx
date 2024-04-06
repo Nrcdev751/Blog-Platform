@@ -70,6 +70,7 @@ function Recommend(){
                
             </div>
             <div className="flex flex-wrap md:-mx-2">
+                
                 <div className="w-full md:w-2/3 md:px-2">
                         <Link className="" to="/blog/blog01"> 
                             <div className="blog relative">
