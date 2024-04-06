@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="157" height="155" viewBox="0 0 157 155">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        filter: url(#filter-4);
+      }
+    </style>
+    <filter id="filter" x="69" y="-6" width="104" height="101" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="6" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.32"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="-14" y="-13" width="113" height="110" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="6" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.32"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="69" y="68" width="104" height="101" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="6" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.32"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="-10" y="68" width="104" height="101" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="6" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.32"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-1" x="86.813" y="11.813" width="68.188" height="65.094"/>
+  <path id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-2" d="M3,14.4L70.395,4l9.955,64.32-67.4,10.4Z"/>
+  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-3" x="86.813" y="85.906" width="68.188" height="65.094"/>
+  <rect id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-4" x="7.563" y="85.906" width="68.219" height="65.094"/>
+</svg>
