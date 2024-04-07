@@ -4,8 +4,14 @@ import honkai from '../img/honkai.jpeg'
 import valorant from '../img/valorant.png'
 import {Link } from 'react-router-dom'
 import blogs from '../json/blog.json'
+import React, { useState } from 'react';
 
 function Blog(){
+    const [search, setSearch] = useState('');
+    const filteredData = blogs.filter((item) => {
+        const titleMatch = item.title.toLowerCase().includes(search.toLowerCase());
+        return titleMatch ;
+    });
     return(
         <>
             <section className="p-3">
@@ -21,11 +27,27 @@ function Blog(){
                     <div className="md:grid grid-cols-6">
                         <div className="col-span-4">
                             <label className="input input-bordered mb-3 flex items-center gap-2">
-                                <input type="text" className="grow" placeholder="ค้นหาบทความ" />
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
+                            <input
+                        type="text"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        className="grow"
+                        placeholder="ค้นหาบทความ"
+                    />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        className="w-4 h-4 opacity-70"
+                    >
+                        <path
+                            fillRule="evenodd"
+                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                            clipRule="evenodd"
+                        />
+                    </svg>
                             </label>
-                            {
-                                blogs.map((blogs) => (
+                            {filteredData.map((blogs) => (
                                 <Link to={blogs.path}>
                                     <div className="blog-1 grid md:grid-cols-2 py-2 hover:bg-blue-900/25 duration-200 md:p-5">
                                         <div className="blog relative">

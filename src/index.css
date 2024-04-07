@@ -9,10 +9,7 @@
   }
   
 body {
-  background-color: #13102a;
   background-image: linear-gradient(180deg, #13102a 100%, #1f1c50 100%);
-  
-
 
 }
 .card:hover .card-banner   {

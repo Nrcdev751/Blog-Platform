@@ -1,9 +1,4 @@
-import sololevel from '../../assets/img/Solo-Leveling-ARISE.png'
-import honkai from '../../assets/img/honkai.jpeg'
-import profile from '../../assets/img/profile.jpg'
-import valorant from '../../assets/img/valorant.png'
-
-export const data = [
+[
   {
     "id": 1,
     "title": "Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง",
@@ -11,11 +6,11 @@ export const data = [
     "game": "Solo leveling Arise",
     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
     "author": "Narongchai",
-    "author_img": profile,
+    "author_img": "images/profile.jpg",
     "views": 1340,
     "likes": 125,
     "date": "21 มีนาคม 67 19.21 น.",
-    "images2" : sololevel,
+    "images" : "images/Solo-Leveling-ARISE.png",
     "path" : "/blog/blog01"
   },
   
@@ -26,11 +21,11 @@ export const data = [
     "game": "Valorant",
     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
     "author": "Narongchai",
-    "author_img": profile,
+    "author_img": "images/profile.jpg",
     "views": 700,
     "likes": 56,
     "date": "28 มีนาคม 67 19.05 น.",
-    "images2" : valorant,
+    "images" : "images/valorant.png",
     "path" : "/blog/blog01"
   },
   {
@@ -40,11 +35,11 @@ export const data = [
     "game": "Honkai Star rail",
     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
     "author": "Narongchai",
-    "author_img": profile,
+    "author_img": "images/profile.jpg",
     "views": 942,
     "likes": 420,
     "date": "28 มีนาคม 67 16.49 น.",
-    "images2" : honkai,
+    "images" : "images/honkai.jpeg",
     "path" : "/blog/blog01"
-  },
+  }
 ]

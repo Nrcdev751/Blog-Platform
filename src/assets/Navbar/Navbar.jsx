@@ -1,15 +1,37 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import {Link } from 'react-router-dom'
 import logo from "../img/logo.svg"
+import { MdOutlineDarkMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
 
 function Navbar(){
+        const [isActive, setIsActive] = useState(false);
+        // daisyui
+        const [theme,setTheme] = useState("dark");
+
+        useEffect(() =>{
+            if(theme === "dark"){
+                document.documentElement.classList.add("dark");
+            }else{
+                document.documentElement.classList.remove("dark");
+            }
+        },[theme]
+        );
+        useEffect(() => {
+            document.querySelector('html').setAttribute('data-theme', theme);
+        }, [theme]);
+        // tailwind
+        const handleThemeSwitch = () =>{
+            setTheme(theme === "dark" ? "light" : "dark");
+        };
+
         const [isMenuOpen,setIsMenuOpen] = useState(false);
 
         const toggleMenu = () => {
             setIsMenuOpen(!isMenuOpen)
         }
     return(
-        <section className="main-bg p-3">
+        <section className=" p-3">
             <nav className=" p-4 max-w-screen-xl  mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="md:hidden">
@@ -33,8 +55,19 @@ function Navbar(){
                     </ul>
                 </div>
                 <div className="hidden md:flex ">
-                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 mx-2">เข้าสู่ระบบ</button>
-                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">สมัครสมาชิก</button>
+                    <button className="btn btn-sm btn-ghost text-white  bg-gradient-to-r from-gray-800 to-slate-900 mx-2">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white mx-2">สมัครสมาชิก</button>
+                    <div className=" flex items-center " >
+                        {isActive? <MdOutlineLightMode className="fill-white mx-2 size-5 cursor-pointer" onClick={()=>{
+                            handleThemeSwitch()
+                            setIsActive(!isActive)}}/>:
+                        <MdOutlineDarkMode  className="fill-white mx-2 size-5 cursor-pointer" onClick={()=>{
+                            handleThemeSwitch()
+                            setIsActive(!isActive)}} />
+                            }
+                    </div>
+
+     
                 </div>
             </div>
             {isMenuOpen ? (
@@ -44,7 +77,7 @@ function Navbar(){
                     <li  className="py-2"><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
                     <li  className="py-2"><Link to="/write" className="text-white">เขียนบทความ</Link></li>
                     <div className="mt-2">
-                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-ghost text-white bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
                     <br />
                     <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white mt-2">สมัครสมาชิก</button>
                     </div>

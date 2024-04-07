@@ -13,15 +13,15 @@ function Satistic(){
                                 satis.map((satistic) => (
                                 <div className="grid md:grid-cols-3 my-10">
                                     <div className="text-center">
-                                        <p className="text-7xl text-blue-600">{satistic.totalBlogs}</p>
+                                        <p className="text-7xl text-blue-600">{satistic.totalBlogs.toLocaleString()}</p>
                                         <p className="text-xl text-slate-300/80 my-5">บทความ</p>
                                     </div>
                                     <div className="text-center">
-                                        <p className="text-7xl text-blue-600">{satistic.totalAuthor}</p>
+                                        <p className="text-7xl text-blue-600">{satistic.totalAuthor.toLocaleString()}</p>
                                         <p className="text-xl text-slate-300/80 my-5">ผู้เขียนบทความ</p>
                                     </div>
                                     <div className="text-center">
-                                        <p className="text-7xl text-blue-600">{satistic.totalViews}</p>
+                                        <p className="text-7xl text-blue-600">{satistic.totalViews.toLocaleString()}</p>
                                         <p className="text-xl text-slate-300/80 my-5">ยอดรับชม</p>
                                     </div>
                                 </div>

@@ -4,6 +4,7 @@ import sololeveling from '../img/Solo-Leveling-ARISE.png'
 import honkai from '../img/honkai.jpeg'
 import valorant from '../img/valorant.png'
 import logo from "../img/logo.svg"
+// import blogs2 from '../json/blog2.json'
 function Recommend(){
     const [isMenuOpen,setIsMenuOpen] = useState(false);
 
@@ -62,7 +63,7 @@ function Recommend(){
             <div className="flex justify-between items-center">
                 <div className="titile flex items-center">
                     <ion-icon name="flash"></ion-icon>
-                    <p className="text-2xl py-3 text-white px-1">บทความล่าสุด</p>
+                    <p className="text-2xl py-3 text-white px-1">บทความยอดนิยม</p>
                 </div>
                 <Link to="/blog" className="text-white"> 
                     <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
@@ -103,6 +104,12 @@ function Recommend(){
                 </div>
 
                 <div className="w-full md:w-1/3 md:px-2">
+                            {/* {
+                            blogs2.map((blogs) => (
+                                {blogs.title}
+                                    )
+                                )
+                            } */}
                     <Link to="/blog/blog01" className="text-white hover:opacity-80 duration-300">
                         <div className="blog relative">
                             <div className="flex">

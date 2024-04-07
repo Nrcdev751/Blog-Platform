@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -12,7 +13,7 @@ export default {
     },
   },
   daisyui: {
-    themes: ["synthwave"],
+    themes: ['synthwave','light'],
   },
   plugins: [require("daisyui")],
 }
