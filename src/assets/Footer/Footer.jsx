@@ -1,8 +1,8 @@
 function Footer(){
     return(
-        <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+        <footer className="footer  footer-center p-4 ">
         <aside>
-            <p>Copyright © 2024 - All right reserved by Narongchai</p>
+            <p className="text-white">Copyright © 2024 - All right reserved by Narongchai</p>
         </aside>
         </footer>
     )
