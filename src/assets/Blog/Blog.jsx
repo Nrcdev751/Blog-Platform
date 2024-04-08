@@ -14,12 +14,12 @@ function Blog(){
     });
     return(
         <>
-            <section className="p-3">
+            <section className="dark:bg-slate-950/25   bg-white p-3">
                 <div className="p-4 max-w-screen-xl mx-auto">
                     <div className="flex justify-between items-center">
                                <div className="flex items-center">
                                     <ion-icon name="book"></ion-icon>
-                                    <p className="text-2xl py-3 text-white px-2">บทความของเรา</p>
+                                    <p className="text-2xl py-3  px-2">บทความของเรา</p>
                                </div>
                                <Link to="/blog">
                                     <div className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">ชมทั้งหมด</div>
@@ -56,8 +56,8 @@ function Blog(){
                                             </div>
                                         </div>
                                         <div className="ms-3">
-                                            <p className="text-white md:text-xl my-2">{blogs.title}</p>
-                                            <p className="text-slate-300/70 my-2">{blogs.content}</p>
+                                            <p className="font-bold md:text-xl my-2">{blogs.title}</p>
+                                            <p className=" my-2">{blogs.content}</p>
                                             <div className="status flex justify-between md:hidden xl:flex">
                                                 <div className="icon status flex  items-center">
                                                     <ion-icon name="eye-outline"></ion-icon>
@@ -86,8 +86,8 @@ function Blog(){
                         
                         </div>
                         <div className="col-span-2">
-                            <div className="game-card md:ms-3 bg-blue-600/25 text-white p-3 rounded-xl">
-                                <p className="text-xl font-bold">ผู้เขียนบทความของเรา</p>
+                            <div className="game-card md:ms-3 bg-blue-600 dark:bg-blue-600/25  p-3 rounded-xl">
+                                <p className="text-xl font-bold text-white">ผู้เขียนบทความของเรา</p>
                             </div>
                             <Link to="/author/narongchai">
                                 <div className="flex items-center mt-3 hover:bg-slate-700/25 duration-300 xl:flex p-5 mx-3 rounded-md">

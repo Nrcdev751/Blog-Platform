@@ -7,12 +7,12 @@ import honkaiBanner from '../img/honkai-banner.png'
 function Trending(){
     return(
         <>
-       <section className="">
+       <section className="dark:bg-slate-950/25   bg-white p-3">
             <div className="p-4 max-w-screen-xl mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="titile flex items-center">
                         <ion-icon name="flame"></ion-icon>
-                        <p className="text-2xl py-3 text-white px-1">เกมฮิตติดเทรนด์</p>
+                        <p className="text-2xl py-3  px-1">เกมฮิตติดเทรนด์</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-3 md:grid-cols-6 gap-2">

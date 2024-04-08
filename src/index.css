@@ -19,3 +19,7 @@ body {
 .ql-toolbar.ql-snow{
   border: 1px solid #b90101;
 }
+
+nav a.active{
+  font-weight: bold;
+}

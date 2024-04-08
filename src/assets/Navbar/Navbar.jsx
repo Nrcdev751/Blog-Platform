@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react"
-import {Link } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 import logo from "../img/logo.svg"
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
@@ -48,10 +48,10 @@ function Navbar(){
                     <img src={logo} className="h-5 w-5 mx-2" alt="" />
                 </div>
                 <ul className="hidden md:flex space-x-4">
-                        <li><Link to="/Blog-Platform/" className="text-white">หน้าแรก</Link></li>
-                        <li><Link to="/blog" className="text-white">บทความ</Link></li>
-                        <li><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
-                        <li><Link to="/write" className="text-white">เขียนบทความ</Link></li>
+                        <li><NavLink to="/Blog-Platform/" className="text-white">หน้าแรก</NavLink></li>
+                        <li><NavLink to="/blog" className="text-white">บทความ</NavLink></li>
+                        <li><NavLink to="/author/narongchai" className="text-white">ผู้เขียนบทความ</NavLink></li>
+                        <li><NavLink to="/write" className="text-white">เขียนบทความ</NavLink></li>
                     </ul>
                 </div>
                 <div className="hidden md:flex ">
@@ -72,10 +72,10 @@ function Navbar(){
             </div>
             {isMenuOpen ? (
                 <ul className="flex-col md:hidden transition-all">
-                    <li className="py-2"><Link to="/Blog-Platform" className="text-white">หน้าแรก</Link></li>
-                    <li  className="py-2"><Link to="blog" className="text-white">บทความ</Link></li>
-                    <li  className="py-2"><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
-                    <li  className="py-2"><Link to="/write" className="text-white">เขียนบทความ</Link></li>
+                    <li className="py-2"><NavLink to="/Blog-Platform" className="text-white">หน้าแรก</NavLink></li>
+                    <li  className="py-2"><NavLink to="blog" className="text-white">บทความ</NavLink></li>
+                    <li  className="py-2"><NavLink to="/author/narongchai" className="text-white">ผู้เขียนบทความ</NavLink></li>
+                    <li  className="py-2"><NavLink to="/write" className="text-white">เขียนบทความ</NavLink></li>
                     <div className="mt-2">
                     <button className="btn btn-sm btn-ghost text-white bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
                     <br />

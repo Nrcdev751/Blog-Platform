@@ -31,6 +31,7 @@ function Write(){
     return(
         <>
             <Navbar/>
+            <section className="dark:bg-slate-950/25   bg-white">
             <div className="p-4 max-w-screen-xl  mx-auto  ">
                 <div className="text-sm breadcrumbs">
                     <ul>
@@ -85,6 +86,7 @@ function Write(){
                     <div className="col-span-3"></div>
                 </div>
             </div>
+            </section>
             <Footer/>
         </>
     )

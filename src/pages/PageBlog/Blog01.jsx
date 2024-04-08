@@ -36,7 +36,7 @@ function Blog(){
     return(
         <>
             <Navbar/>
-            <section>
+            <section className="dark:bg-slate-950/25   bg-white">
                 <div className="p-4 max-w-screen-xl  mx-auto  ">
                         <div className="text-sm breadcrumbs">
                             <ul>
@@ -60,13 +60,13 @@ function Blog(){
                             </div>
                         </div>
                             <p className="text-xl lg:text-3xl my-3">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
-                            <div className="bg-red-400 text-white inline-flex items-center  my-3 px-3 rounded-md">
-                                <ion-icon name="flame"></ion-icon> <p>ข่าวมาแรง</p>
+                            <div className="bg-red-400  inline-flex items-center  my-3 px-3 rounded-md text-white">
+                                <ion-icon name="flame"></ion-icon> <p className="">ข่าวมาแรง</p>
                             </div>
                             <img src={sololeveling} className="w-full my-2" alt="" />
-                            <p className="text-slate-300/80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad ducimus ab dicta, cum maiores libero excepturi consequuntur amet obcaecati provident earum, alias dolores labore ipsa optio nisi quidem voluptatibus!</p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad ducimus ab dicta, cum maiores libero excepturi consequuntur amet obcaecati provident earum, alias dolores labore ipsa optio nisi quidem voluptatibus!</p>
                             <p className="lg:text-2xl my-2">Heading</p>
-                            <p className="text-slate-300/80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad iure nisi culpa ipsum atque quisquam aliquid? Pariatur eos dolor, ratione dolores assumenda maxime omnis laudantium explicabo eveniet porro. Excepturi.</p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad iure nisi culpa ipsum atque quisquam aliquid? Pariatur eos dolor, ratione dolores assumenda maxime omnis laudantium explicabo eveniet porro. Excepturi.</p>
                             <div className="option-button flex justify-between items-center my-5">
                                 <a >
                                 <div className="flex items-center cursor-pointer">
@@ -92,7 +92,7 @@ function Blog(){
                                     
                                 </div>
                             </div>
-                            <div className="author flex justify-between p-2 bg-slate-800/25 my-3 items-center">
+                            <div className="author flex justify-between p-2 dark:bg-slate-800/25 my-3 items-center">
                                 <div className="flex items-center mt-3 ">
                                             <img className="rounded-full  h-10 w-10 my-3" src={profile} alt="" />
                                             <div className="infomation ms-2">
@@ -133,7 +133,7 @@ function Blog(){
                                         </div>
                                     </div>
                                     <div className="ms-3">
-                                        <p className="text-white text-md my-2">Clove เอเจนท์ใหม่ทำให้ Smoke น่าเล่นขึ้น</p>
+                                        <p className=" text-md my-2">Clove เอเจนท์ใหม่ทำให้ Smoke น่าเล่นขึ้น</p>
                                         <div className="icon status flex  items-center">
                                             <ion-icon name="eye-outline"></ion-icon>
                                             <p className='mx-2'>50</p>
@@ -151,7 +151,7 @@ function Blog(){
                                         </div>
                                     </div>
                                     <div className="ms-3">
-                                        <p className="text-white text-md my-2">แพทซ์ใหม่ครบรอบ 1 ปีมีอะไรน่าสนใจมาดูกัน</p>
+                                        <p className=" text-md my-2">แพทซ์ใหม่ครบรอบ 1 ปีมีอะไรน่าสนใจมาดูกัน</p>
                                         <div className="icon status flex  items-center">
                                             <ion-icon name="eye-outline"></ion-icon>
                                             <p className='mx-2'>45</p>

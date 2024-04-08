@@ -1,11 +1,35 @@
 import {Link } from 'react-router-dom'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import sololeveling from '../img/Solo-Leveling-ARISE.png'
 import honkai from '../img/honkai.jpeg'
 import valorant from '../img/valorant.png'
 import logo from "../img/logo.svg"
+
+import { MdOutlineDarkMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
+
 // import blogs2 from '../json/blog2.json'
 function Recommend(){
+    const [isActive, setIsActive] = useState(false);
+    // daisyui
+    const [theme,setTheme] = useState("dark");
+
+    useEffect(() =>{
+        if(theme === "dark"){
+            document.documentElement.classList.add("dark");
+        }else{
+            document.documentElement.classList.remove("dark");
+        }
+    },[theme]
+    );
+    useEffect(() => {
+        document.querySelector('html').setAttribute('data-theme', theme);
+    }, [theme]);
+    // tailwind
+    const handleThemeSwitch = () =>{
+        setTheme(theme === "dark" ? "light" : "dark");
+    };
+
     const [isMenuOpen,setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -15,7 +39,7 @@ function Recommend(){
         
         <>
     <section className="main-bg bg-[url('./assets/img/main-bg.png')] bg-contain   p-3">
-        <nav className=" p-4 max-w-screen-xl  mx-auto  ">
+    <nav className=" p-4 max-w-screen-xl  mx-auto  ">
             <div className="flex items-center justify-between">
                 <div className="md:hidden">
                     <button onClick={toggleMenu} id="menu-toggle" className="text-white">
@@ -30,26 +54,37 @@ function Recommend(){
                     <div className="text-white text-2xl font-bold">GamerGrid</div>
                     <img src={logo} className="h-5 w-5 mx-2" alt="" />
                 </div>
-                    <ul className="hidden md:flex space-x-4">
-                        <li><Link to="/" className="text-white">หน้าแรก</Link></li>
+                <ul className="hidden md:flex space-x-4">
+                        <li><Link to="/Blog-Platform/" className="text-white">หน้าแรก</Link></li>
                         <li><Link to="/blog" className="text-white">บทความ</Link></li>
                         <li><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
                         <li><Link to="/write" className="text-white">เขียนบทความ</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:flex ">
-                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 mx-2">เข้าสู่ระบบ</button>
-                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white">สมัครสมาชิก</button>
+                    <button className="btn btn-sm btn-ghost text-white  bg-gradient-to-r from-gray-800 to-slate-900 mx-2">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white mx-2">สมัครสมาชิก</button>
+                    <div className=" flex items-center " >
+                        {isActive? <MdOutlineLightMode className="fill-white mx-2 size-5 cursor-pointer" onClick={()=>{
+                            handleThemeSwitch()
+                            setIsActive(!isActive)}}/>:
+                        <MdOutlineDarkMode  className="fill-white mx-2 size-5 cursor-pointer" onClick={()=>{
+                            handleThemeSwitch()
+                            setIsActive(!isActive)}} />
+                            }
+                    </div>
+
+     
                 </div>
             </div>
             {isMenuOpen ? (
                 <ul className="flex-col md:hidden transition-all">
-                    <li className="py-2"><Link to="/" className="text-white">หน้าแรก</Link></li>
+                    <li className="py-2"><Link to="/Blog-Platform" className="text-white">หน้าแรก</Link></li>
                     <li  className="py-2"><Link to="blog" className="text-white">บทความ</Link></li>
                     <li  className="py-2"><Link to="/author/narongchai" className="text-white">ผู้เขียนบทความ</Link></li>
                     <li  className="py-2"><Link to="/write" className="text-white">เขียนบทความ</Link></li>
                     <div className="mt-2">
-                    <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
+                    <button className="btn btn-sm btn-ghost text-white bg-gradient-to-r from-gray-800 to-slate-900 ">เข้าสู่ระบบ</button>
                     <br />
                     <button className="btn btn-sm btn-ghost  bg-gradient-to-r from-blue-500 to-blue-800 text-white mt-2">สมัครสมาชิก</button>
                     </div>
@@ -61,7 +96,7 @@ function Recommend(){
         </nav>
         <div className="p-4 max-w-screen-xl mx-auto">
             <div className="flex justify-between items-center">
-                <div className="titile flex items-center">
+                <div className="titile flex items-center text-white">
                     <ion-icon name="flash"></ion-icon>
                     <p className="text-2xl py-3 text-white px-1">บทความยอดนิยม</p>
                 </div>
@@ -86,13 +121,13 @@ function Recommend(){
                                         </div>
                                         <p className="text-white md:text-3xl">Solo leveling Arise เปิดบริการวันแรกเป็นอย่างไรบ้าง</p>
                                         <div className="status flex justify-between">
-                                            <div className="icon status flex items-center">
+                                            <div className="icon status flex items-center text-white">
                                                 <ion-icon name="eye-outline"></ion-icon>
                                                 <p className='mx-2'>100</p>
                                                 <ion-icon name="heart-outline"></ion-icon>
                                                 <p className='mx-2'>10</p>
                                             </div>
-                                            <div className="date status">
+                                            <div className="date status text-white">
                                                 <p>21 มีนาคม 67 19.21 น.</p>
                                             </div>
                                         </div>
